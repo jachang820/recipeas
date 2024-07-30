@@ -1,0 +1,121 @@
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    vertical-align: top;
+    margin: 0.5rem;
+    width: 95%;
+    box-sizing: border-box;
+    background-color: rgb(255 255 255 / 0.75);
+    border: rgb(17 24 39 / 0.2) solid 1px;
+}
+
+.label {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size, 1.2rem);
+    line-height: 1;
+    letter-spacing: 0.01rem;
+    padding: 0;
+    display: block;
+    transform-origin: top left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    color: var(--font-color, rgb(0 0 0 / 0.5));
+    opacity: 0.85;
+    transform: translate(var(--label-translate-x, 1.25em), var(--label-translate-y, 2em));
+    transition:
+            color 500ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+            transform 500ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+            font-size 500ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.label.active, .label:not(.empty) {
+    max-width: 133%;
+    color: rgb(66 97 125);
+    opacity: 1;
+    font-weight: 500;
+    font-size: 1rem;
+    transform: translate(8px, 6px);
+}
+
+.text-container {
+    line-height: 1;
+    letter-spacing: 0.01em;
+    color: rgb(0 0 0 / 0.8);
+    position: relative;
+    cursor: text;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 5px 0 5px;
+    transition-duration: 500ms;
+    transition-property: border-bottom-color;
+}
+
+.text-container:not(.active) {
+    border-bottom: rgb(0 0 0 / 0.25) 2px solid;
+    margin-bottom: 1px;
+}
+
+.text-container.active {
+    border-bottom: rgb(66 97 125 / 0.8) 3px solid;
+    margin-bottom: 0;
+}
+
+.text-container:not(.active):hover {
+    border-bottom: rgb(0 0 0 / 0.7) 3px solid;
+    margin-bottom: 0;
+}
+
+.input {
+    font: inherit;
+    letter-spacing: inherit;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: var(--font-weight, 400);
+    font-size: var(--font-size, 1.2rem);
+    color: var(--font-color, rgb(0 0 0 / 0.7));
+    text-align: var(--text-align, left);
+    padding-top: 8px;
+    border: 0;
+    box-sizing: content-box;
+    margin: 0;
+    display: block;
+    min-width: 0;
+    width: 100%;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    background-color: var(--background-color, rgb(236 236 236));
+}
+
+.structure {
+    visibility: hidden;
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    top: 0;
+    left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 16rem;
+    outline: none;
+}
+
+@media (min-width: 640px) {
+    .label {
+        transform: translate(20px, var(--label-translate-y, 2em));
+    }
+}

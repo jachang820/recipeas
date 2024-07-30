@@ -1,0 +1,20 @@
+body::after {
+    content: '';
+    display: block;
+    height: 2rem;
+}
+
+footer {
+    display: block;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: rgb(15 23 42);
+    background-color: rgb(66 97 125 / 0.2);
+    height: 2rem;
+    vertical-align: center;
+}
+
+.text {
+    margin-top: 0.4rem;
+}

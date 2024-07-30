@@ -1,0 +1,10 @@
+.submit {
+    position: relative;
+    margin: 4rem auto;
+    padding: 1.2rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow:
+            7px 12px 15px rgb(66 97 125 / 0.7),
+            0 1px 2px -1px rgb(0 0 0 / 0.1);
+    opacity: 0.8;
+}

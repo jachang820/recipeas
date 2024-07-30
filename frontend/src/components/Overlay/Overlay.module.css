@@ -1,0 +1,22 @@
+.overlay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    z-index: var(--z-index, 50);
+    padding-top: 6rem;
+    background-color: var(--background-color, #f9f9f9);
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    overflow-y: auto;
+    flex: 1;
+    padding-bottom: 6rem;
+}

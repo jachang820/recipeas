@@ -1,0 +1,87 @@
+.image-upload-container {
+    width: 100%;
+}
+
+.filepond--wrapper {
+    width: 100%;
+    height: 50vw;
+}
+
+.filepond--root {
+    height: 100%;
+    overflow: hidden !important;
+}
+
+.filepond--browser {
+    height: 100%;
+    z-index: 50 !important;
+    cursor: pointer !important;
+}
+
+.filepond--file-action-button {
+    cursor: pointer !important;
+}
+
+.filepond--action-remove-item {
+    z-index: 100 !important;
+}
+
+.filepond--drop-label {
+    height: 100% !important;
+}
+
+label:hover {
+    fill: rgb(66 97 125);
+}
+
+.upload-icon {
+    fill: rgb(66 97 125 / 0.5);
+    transform: scale(1);
+    transition-duration: 500ms;
+    transition-property: fill, transform;
+}
+
+.filepond--panel-root {
+    border-radius: 0.25rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.filepond--list-scroller {
+    height: 50vh !important;
+    position: relative !important;
+}
+
+.filepond--item {
+    margin: 0 !important;
+}
+
+.filepond--file-info-main {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1rem !important;
+    white-space: normal !important;
+    word-wrap: break-word;
+}
+
+.filepond--file-info-sub {
+    font-size: 1rem !important;
+    opacity: 0.8 !important;
+}
+
+.filepond--image-preview-wrapper {
+    border-radius: 0 !important;
+    width: 100%;
+}
+
+.filepond--image-bitmap canvas {
+    object-fit: cover;
+}
+
+@media (min-width: 640px) {
+    .image-upload-container {
+
+    }
+
+    .filepond--wrapper {
+        height: 100%;
+    }
+}

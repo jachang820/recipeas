@@ -1,0 +1,55 @@
+.subsection {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.subtitle {
+    margin-left: 1rem;
+    color: rgb(0 0 0 / 0.75);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1rem;
+    margin: 3rem auto;
+}
+
+.button {
+    margin: 0;
+    border-radius: 0.5rem;
+    height: 3.25rem;
+}
+
+.warn {
+    margin: 0 auto;
+    font-weight: 600;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+@media (min-width: 640px) {
+    .subsection {
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: flex-end;
+        width: 92vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .buttons {
+        max-width: 48rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .buttons {
+        width: 75vw;
+        max-width: 75rem;
+    }
+}
